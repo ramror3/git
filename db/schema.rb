@@ -10,7 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180823163419) do
+ActiveRecord::Schema.define(version: 20180823184239) do
+
+  create_table "hostels", force: :cascade do |t|
+    t.string "h_name"
+    t.text "h_address"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "laps", force: :cascade do |t|
+    t.integer "lap_mode"
+    t.string "lap_color"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "movies", force: :cascade do |t|
     t.string "movie_name"
