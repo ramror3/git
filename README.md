@@ -23,3 +23,4 @@ Things you may want to cover:
 
 * rails v-4.2.10
 * ruby - 2.3.0
+* DB - MySql
