@@ -1,0 +1,32 @@
+<%= form_with(model: winner, local: true) do |form| %>
+  <% if winner.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(winner.errors.count, "error") %> prohibited this winner from being saved:</h2>
+
+      <ul>
+      <% winner.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :w_name %>
+    <%= form.text_field :w_name, id: :winner_w_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :w_goal %>
+    <%= form.text_field :w_goal, id: :winner_w_goal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :w_description %>
+    <%= form.text_area :w_description, id: :winner_w_description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

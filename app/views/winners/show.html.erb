@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>W name:</strong>
+  <%= @winner.w_name %>
+</p>
+
+<p>
+  <strong>W goal:</strong>
+  <%= @winner.w_goal %>
+</p>
+
+<p>
+  <strong>W description:</strong>
+  <%= @winner.w_description %>
+</p>
+
+<%= link_to 'Edit', edit_winner_path(@winner) %> |
+<%= link_to 'Back', winners_path %>
