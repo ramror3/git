@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'hello/index'
+
   get 'feelings/index'
 
   resources :hostels
