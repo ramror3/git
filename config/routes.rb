@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'feelings/index'
+
   resources :hostels
   resources :winners
   resources :movies
